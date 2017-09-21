@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Float-makes no sense</title>
+	<style>
+		#container{
+			background-color: red;
+			border: 2px solid black;
+		}
+		.left{
+			float: left;
+			width: 40%;
+		}
+		.right{
+			float: right;
+			width: 40%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Float
+	1) a block level element no longer takes up the whole page, it not a inline, its not inline-block, its not block.....it's not even display
+	ie. margin will not be added! 
+	2) the element will go as far left as it can until it runs into something else floating in that direction, or it runs out of room
+	3) floated elements are in their own univerise, they do not pass their height up to their parents, unless their parents are also
+	floating you will get odd behaviour when static elements run into floated elements
+	3b) to force height up: you have two options
+		1) set the parent to float
+		2) overflow: hidden/or other options-->
+	<div id="container">
+		<div class="left">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, laboriosam, facere placeat voluptates id veniam eius atque rem nesciunt, tempora iste voluptatem. Fuga repudiandae nisi nostrum ab esse eos consequuntur.
+		</div>
+		<div class="left">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, laboriosam, facere placeat voluptates id veniam eius atque rem nesciunt, tempora iste voluptatem. Fuga repudiandae nisi nostrum ab esse eos consequuntur.
+		</div>
+		<div class="left">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, laboriosam, facere placeat voluptates id veniam eius atque rem nesciunt, tempora iste voluptatem. Fuga repudiandae nisi nostrum ab esse eos consequuntur.
+		</div>
+		<div class="right">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, laboriosam, facere placeat voluptates id veniam eius atque rem nesciunt, tempora iste voluptatem. Fuga repudiandae nisi nostrum ab esse eos consequuntur.
+		</div>
+	</div>
+</body>
+</html>
