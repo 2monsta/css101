@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Practice</title>
+	<style>
+		#the-block, #the-block2{
+			width: 48%;
+			display: inline-block;
+		}
+		/* #the-block2{
+			width: 50%;
+			display: inline-block;
+		} */
+		#container #the-block{
+
+		}
+		.one.big{
+
+		}
+		.i-am-inline{
+			background-color: green;
+			 /* will be ignored  */
+			width: 100px; 
+			/* will be ignored */
+			margin-top: 1000px;
+			margin-left: 50px;
+		}
+		.meme-holder{
+			border: 2px solid red;
+			width: 300px;
+			display: inline-block; /* allows the two container to sit next to eachother */
+		}
+		.meme-holder img{ /* this will apply to img tags inside the meme-holder */
+			max-width: 100%
+		}
+	</style>
+</head>
+<body>
+	<!-- Block Element
+	 1) a block level element by defualt taes up all the space to the right and to the left 
+	possible internal to its parent
+	2) it can have a height and a width
+	3) nothing can ever be on either side(internal to the parent) because its
+	100% if you change the width, it will just add margin. Blocks will ignore margin
+	you add, because they are 100%
+	4) If you change the size, it will still take up 100 %, but the rest outside of the wide, will just
+	be more margin
+	5) you cannot remove margin because you IT HAS TO take up 100% of the width 
+	6) a comma in css is like an OR statement
+	7) a space is an AND statmnt, it means, find something with id of "the-block" inside somewithing
+	with an id of "container"
+	8) no space and no comma is like an AND statment, it must have both ( class of one and class of BIG)
+	-->
+
+	<div class="meme-holder">
+		<img src="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" alt="">
+	</div>
+	<div class="meme-holder">
+			<img src="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" alt="">
+	</div>
+	<div id="container">
+		<div id="the-block" class="one big">
+		
+		</div>
+		<div id="the-block2" class="two big">
+			
+		</div>
+	</div>
+	<span class="i-am-inline"> 
+		<!-- Inline element
+		1. respect left and right padding, left and right margin but will ignore top and bottom
+		2. couldnt careless what is left or right
+		3. with a few exceptions ( namely images) you cannot tell an inlin element how big to be
+		4. will happily ignore all block level rules unless forced to do so	
+		5. can be more than 100%
+
+			Inline Block
+		1. can have stuff on either side
+		2. can have height/width
+		3. can have top/bottom padding/margin
+	
+		-->
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium veniam, dolore nisi perspiciatis consequatur laboriosam, vitae beatae dolorum culpa esse repudiandae error dolor sunt, voluptates odio recusandae ipsum nostrum eligendi.
+	</span>
+
+</body>
+</html>
