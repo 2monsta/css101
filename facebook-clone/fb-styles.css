@@ -1,0 +1,209 @@
+body{
+	background-color: #E9EBEE;
+}
+#header{
+	height: 42px;
+	background-color: #4267B2
+}
+.navbar{
+	max-width: 900px;
+	margin: auto;
+}
+.fb-logo{
+    background-image: url('https://www.facebook.com/rsrc.php/v3/ye/r/jNvmNEDilLw.png');
+    background-repeat: no-repeat;
+    background-size: 25px 626px;
+    background-position: 0 -50px;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+	width: 24px;  
+	display: inline-block;
+}
+.navbar-left{
+	width: 50%;
+}
+.navbar-left input{
+	width: 90%;
+	display: inline-block;
+}
+.navbar-right{
+	width: 49%
+}
+/* > will aplly the rule ONLY to direct decendents of the paretn */
+.navbar-right > div, .navbar-right li{
+	display: inline-block;
+}
+.navbar-left, .navbar-right{
+	display: inline-block;
+}
+
+#content{
+	max-width: 900px;
+	margin: auto;
+	margin-top: 15px;
+}
+#content > div{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #ddd;
+	min-height: 100vh;
+	border-radius: 5px;
+}
+.left-content{
+	width: 20%;
+	position: relative;
+}
+.main-content{
+	width: 50%;
+}
+.right-content{
+	width: 25%;
+}
+
+.left-menu-item{
+	padding: 10px;
+}
+img{
+	width: 20px;
+	height: 20px;
+}
+#photo{
+	border-radius: 50%;
+}
+/* Pseudo classes like hover are only applied to the element under certain circumstantces */
+.left-menu-item:hover{
+	background-color: #F6F7F9;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.link-wrapper{
+	display: inline-block;
+	position: relative;
+	top: -4px;
+}
+
+.news-feed{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/y6/r/sgmY6l1vki2.png");
+	height: 1px;
+	width: 5px;
+	background-position: -321px -733px;
+	background-size: 100%;
+	position: relative;
+	left: 5px;
+	bottom: 5px;
+	margin-top: 10px;
+}
+.news-feed-word{
+	position: relative;
+	left: 20px;
+	bottom: 8px;
+	width: 100px;
+}
+.dots{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/y6/r/sgmY6l1vki2.png");
+	height: 15px;
+	width: 25px;
+	background-position: -300px -62px;
+	background-size: 100%;
+	position: relative;
+	left: 128px;
+	bottom: 20px;
+}
+.messenger{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/y6/r/sgmY6l1vki2.png");
+	height: 1px;
+	width: 5px;
+	background-position: -321px -472px;
+	background-size: 100%;
+	position: relative;
+	left: 5px;
+	bottom: 5px;
+	margin-top: 10px;
+}
+.messenger-word{
+	position: relative;
+	left: 20px;
+	bottom: 8px;
+	width: 100px;
+}
+/* watch and some other app */
+.watch{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/y_/r/07HzxoNnkAk.png");
+	height: 3px;
+	width: 5px;
+	background-position: -324px -476px;
+	background-size: 100%;
+	position: relative;
+	left: 7px;
+	bottom: 5px;
+	margin-top: 10px;
+}
+.watch-word{
+	position: relative;
+	left: 20px;
+	bottom: 8px;
+	width: 100px;
+}
+.marketplace{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/y6/r/sgmY6l1vki2.png");
+	height: 1px;
+	width: 5px;
+	background-position: -321px -713px;
+	background-size: 100%;
+	position: relative;
+	left: 5px;
+	bottom: 5px;
+	margin-top: 10px;
+}
+.market-place-word{
+	position: relative;
+	left: 20px;
+	bottom: 8px;
+	width: 100px;
+}
+.main-content-top{
+	border: 1px solid black;
+}
+.main-content-top-nav-item{
+	display: inline-block;
+}
+.nav-pic{
+	background-image: url("https://www.facebook.com/rsrc.php/v3/yE/r/BhUPDrUOqLA.png");
+	background-size: 1149%;
+	width: 20px;
+	height: 20px;
+	background-position: -121px -110px; 
+	display: inline-block;
+}
+.top-nav-item{
+	display: inline-block;
+}
+.main-content-top-body{
+	background-color: white;
+}
+
+.main-content-body-image{
+	background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p80x80/19424357_10213365077550814_1282572007386826038_n.jpg?oh=b4f8fc52dadb3c3a5d545b300d5ddd29&oe=5A87D659");
+	background-size: 50px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+.main-content-top-body-text{
+	display: inline-block;
+	width: 90%;
+}
+#nav-text{
+	height: 75px;
+	width: 100%;
+	outline: none;
+	border: none;
+}
